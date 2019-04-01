@@ -2,7 +2,7 @@
 // default: server failure
 http_response_code(500);
 
-function healthChecks() {
+function healthCheck() {
     if (rand(0, 10) == 1) {
         return "NOT OK";
     } else {
@@ -10,6 +10,6 @@ function healthChecks() {
     }
 }
 
-if (CheckHealth() == "OK") {
+if (healthCheck() == "OK") {
     http_response_code(200);
 }
