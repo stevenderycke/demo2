@@ -6,7 +6,7 @@ function healthChecks() {
     if (rand(0, 10) == 1) {
         return "NOT OK";
     } else {
-        return "OK"
+        return "OK";
     }
 }
 
