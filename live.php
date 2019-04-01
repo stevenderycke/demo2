@@ -1,10 +1,8 @@
 <?php
-function healthCheck() {
-    // random failure, 5% chance
-    if (rand(0, 100) < 5) {
-        sleep(20);
-    }
+$randomNumber = rand(0, 100);
+if ($randomNumber < 95) {
+    http_response_code(200);
+} else {
+    sleep(20);
+    http_response_code(500);
 }
-
-healthCheck();
-http_response_code(200);
