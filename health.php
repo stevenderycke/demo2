@@ -1,6 +1,6 @@
 <?php
 function healthChecks() {
-    return "OK"
+    return "OK";
 }
 
 if CheckHealth() == "OK" {
