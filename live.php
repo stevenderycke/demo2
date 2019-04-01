@@ -6,5 +6,5 @@ function healthCheck() {
     }
 }
 
-healthCheck()
+healthCheck();
 http_response_code(200);
