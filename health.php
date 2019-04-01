@@ -3,7 +3,11 @@
 http_response_code(500);
 
 function healthChecks() {
-    return "OK";
+    if (rand(0, 10) == 1) {
+        return "NOT OK";
+    } else {
+        return "OK"
+    }
 }
 
 if (CheckHealth() == "OK") {
