@@ -1,6 +1,6 @@
 <?php
 $randomNumber = rand(0, 100);
-if ($randomNumber <= 90 ) {
+if ($randomNumber <= 100 ) {
     http_response_code(200);
 } else {
     sleep(20);
